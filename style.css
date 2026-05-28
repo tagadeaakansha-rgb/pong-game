@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.score span:first-child {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.score span:last-child {
+    font-size: 2.5em;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#pongCanvas {
+    border: 3px solid #fff;
+    background: #000;
+    display: block;
+    margin: 0 auto 30px;
+    cursor: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.instructions {
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+.instructions strong {
+    color: #ffd700;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+    }
+}
