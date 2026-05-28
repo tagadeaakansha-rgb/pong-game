@@ -1,2 +1,2 @@
 # pong-game
-This is my First Project
+This is my First Game project with basic
